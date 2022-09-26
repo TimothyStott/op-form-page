@@ -157,4 +157,21 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 }
 
 
+.create-or-login{
+    padding-top: 10px;
+}
+
+/* Button Formatting */
+input[type="submit"]{
+    height: 70px;
+    width: 175px;
+    background-color: rgb(28, 75, 28);
+    color: white;
+    font-size: 1.25rem;
+    padding: 3px 5px 3px 5px;
+    margin-bottom: 10px;
+    font-family:  "Noto Sans", sans-serif;
+    border-radius: 25px;
+}
+
 
