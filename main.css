@@ -1,25 +1,48 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-main{
+main {
     display: flex;
     height: 100vh;
+    flex-wrap: wrap;
 }
 
-.hero-left{
+.hero-left {
+    flex: 1 0 auto;
     width: 40vw;
-    background-color: darkgrey;
+    min-width: 250px;
+    background: url(./img/Isaac\ Mitchell.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
 }
 
-.hero-right{
+.hero-right {
+    flex: 1 0 auto;
     width: 60vw;
     display: grid;
     grid-template-rows: repeat(3 auto);
 }
 
-.hero-right-main-text, .create-login{
+.hero-right-main-text,
+.create-or-login {
     background-color: lightgrey;
+}
+
+.form-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 200px;
+    width: minmax(200px, 40%);
+    padding: 0px 10px 0px 10px;
 }
 
