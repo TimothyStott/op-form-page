@@ -5,6 +5,11 @@
     font-family: "Noto Sans", sans-serif;
 }
 
+@font-face {
+    font-family: "Norse-Bold";
+    src: url("./fonts/Norse-Bold.otf") format("opentype");
+}
+
 main {
     display: flex;
     height: 100vh;
@@ -61,12 +66,16 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .logo-text{
-    flex: 1;
+    font-family: "Norse-Bold";
+    text-overflow:clip;
+    flex: 1 0 auto;
     color: white;
-    font-size: clamp(2.5rem,3rem,6rem);
+    font-size: clamp(4rem,5rem,6rem);
+
 }
 
 
