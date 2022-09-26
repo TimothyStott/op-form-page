@@ -22,7 +22,6 @@ main {
 
 .hero-left {
     flex: 1 0 auto;
-    width: 40vw;
     min-width: 250px;
     background: url(./img/Isaac\ Mitchell.avif);
     background-position: center;
@@ -134,6 +133,7 @@ main {
 
 input[type="text"], input[type="password"], input[type="email"]{
     background-color: rgba(223, 223, 223, .05);
+    border-width: 3px;
     border-radius: 5px;
     font-size: clamp(1.1rem, 1.25rem, 1.75rem);
     padding: 3px;
@@ -141,6 +141,10 @@ input[type="text"], input[type="password"], input[type="email"]{
 
 input[type="text"]:valid, input[type="password"]:valid, input[type="email"]:valid{
     border: green solid 3px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus{
+    border: black solid 3px;
 }
 
 
